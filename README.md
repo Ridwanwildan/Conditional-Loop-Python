@@ -113,10 +113,26 @@ if c >= a >= b or c >= b >= a:
      print("Bilangan terbesar yaitu :",c)
 ```       
 
+![flowchart](screenshot/flowchart.PNG)         
+
 Terdapat 3 inputan integer yaitu **a**, **b**, dan **c**. Outputnya nanti akan menghasilkan satu nilai terbesar antara **a**, **b**, dan **c**. Output itu ditentukan oleh conditional if dan kondisi OR. untuk membandingkan mana nilai yang terbesar digunakan tanda >= (besar sama dengan). Outputnya seperti ini :     
 
 ![Gambar 4](screenshot/img4.PNG)       
 
+## Tugas 1: Menentukan dua bilangan terbesar       
 
+```bash
+a = int(input("Masukkan angka pertama :"))
+b = int(input("Masukkan angka kedua :"))
 
+if a > b:
+     print("Bilangan terbesar yaitu :",a)
+if b > a:
+     print("Bilangan terbesar yaitu :",b)
+```        
 
+Ada dua input integer. Jika nilai **A** lebih besar dari **B**, maka nilai **A** yang akan ditampilkan, sedangkan Jika nilai **B** lebih besar dari **A**, maka nilai **B** yang akan ditampilkan. Outputnya adalah ini :       
+
+![Gambar 5](screenshot/img5.PNG)       
+
+## Tugas 2: Mengurutkan data dari data terkecil
