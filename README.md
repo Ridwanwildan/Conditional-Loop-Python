@@ -180,4 +180,41 @@ print("Selesai")
 
 Pada program ini, saya menggunakan for loop yang looping nya bisa dibatasi sebanyak **n** kali. Kita bisa bebas menentukan berapa kali variable **i** akan loop. Saat menampilkan output karena nilai **i** dimulai dari angka 0, maka saya menambahkan **{i+1}** supaya **i** mulai menghitung looping dari angka 1. Ada juga function **random.uniform()** untuk menampilkan bilangan acak mulai dari 0.0 sampai 0.5. Contohnya seperti ini:      
 
-![Gambar 7](screenshot/img7.PNG)       
+![Gambar 7](screenshot/img7.PNG)    
+
+## Tugas 2: Menampilkan bilangan terbesar dari n data yang diinput     
+
+```bash
+a=0
+while True:
+    b=int(input("Masukkan bilangan :"))
+    if a < b :
+        a = b
+    elif b==0:
+        break
+print("Bilangan terbesar adalah :",a)
+```        
+
+Pada program ini, kita bebas mengisi nilai yang kita isi dan bebas mau sampai berapa kali. Jika kita ingin mengakhirinya, kita bisa memasukkan angka **0** dan pada saat itu juga bisa dilihat angka berapa yang paling besar yang sudah kita masukkan tadi. Contohnya seperti ini:      
+
+![Gambar 8](screenshot/img8.PNG)       
+
+## Tugas 3: Menghitung laba         
+
+Seorang pengusaha menginvestasikan uangnya untuk memulai usahanya dengan modal awal 100 juta, pada bulan pertama dan kedua belum mendapatkan laba. pada bulan ketiga baru mulai mendapatkan laba sebesar 1% dan pada bulan ke 5, pendapatan meningkat 5%, selanjutnya pada bulan ke 8 mengalami penurunan keuntungan sebesar 2%, sehingga laba menjadi 3%. Hitung total keuntungan selama 8 bulan berjalan usahanya.           
+
+```bash
+modal = 100000000
+for i in range(9):
+ i = i+1
+ if (i>=1 and i<=2):
+     print(f"Laba bulan ke-{i} sebesar :",modal*0)
+ elif (i>=3 and i<=4):
+     print(f"Laba bulan ke-{i} sebesar :",modal*0.1)
+ elif (i>=5 and i<=7):
+     print(f"Laba bulan ke-{i} sebesar :",modal*0.5)
+ elif (i==8):
+     print(f"Laba bulan ke-{i} sebesar :",modal*0.2)
+total = (((modal*0)*2)+((modal*0.1)*2)+((modal*0.5)*3)+((modal*0.2)*1))
+print("Total laba adalah :", total)
+```         
