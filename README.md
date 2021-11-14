@@ -14,12 +14,12 @@ Dalam latihan membuat conditional dan loop [python](https://www.python.org/) ini
    * [Tugas praktikum 2](https://code.visualstudio.com/)      
    * [Tugas 1: Menentukan dua bilangan terbesar](https://code.visualstudio.com/)      
    * [Tugas 2: Mengurutkan data dari data terkecil](https://code.visualstudio.com/)       
-   * [Tugas 3: Program nested](https://code.visualstudio.com/)              
 
 2. **Loop**
    * [Tugas 1: Menampilkan n bilangan acak yang lebih kecil dari 0.5](https://code.visualstudio.com/)       
    * [Tugas 2: Menampilkan bilangan terbesar dari n data yang diinput](https://code.visualstudio.com/)    
    * [Tugas 3: Menghitung laba](https://code.visualstudio.com/)      
+   * [Tugas 3: Program nested](https://code.visualstudio.com/)        
   
 ## Membuat program menentukan nilai akhir    
 
@@ -135,4 +135,49 @@ Ada dua input integer. Jika nilai **A** lebih besar dari **B**, maka nilai **A**
 
 ![Gambar 5](screenshot/img5.PNG)       
 
-## Tugas 2: Mengurutkan data dari data terkecil
+## Tugas 2: Mengurutkan tiga data dari data terkecil       
+
+```bash
+a = int(input("Masukkan angka pertama :"))
+b = int(input("Masukkan angka kedua :"))
+c = int(input("Masukkan angka ketiga :"))
+
+print("Program mengurutkan data")
+print("Bilangan ke-1 :", a)
+print("Bilangan ke-2 :", b)
+print("Bilangan ke-3 :", c)
+
+if a <= b <= c :
+     print("Urutan bilangan :",a, b, c)
+elif a <= c <= b :
+     print("Urutan bilangan :",a, c, b)
+elif b <= a <= c :
+     print("Urutan bilangan :",b, a, c)
+elif b <= c <= a :
+     print("Urutan bilangan :",b, c, a)
+elif c <= a <= b :
+     print("Urutan bilangan :",c, a, b)
+else :
+     print("Urutan bilangan :",c, b, a)
+```      
+
+Dari input 3 data ini, kita bebas mengisi angka berapa saja yang nantinya angka tersebut akan tersusun dari yang paling terkecil sampai yang paling terbesar. Contohnya seperti ini :       
+
+![Gambar 6](screenshot/img6.PNG)       
+
+## Tugas 1: Menampilkan n bilangan acak yang lebih kecil dari 0.5             
+
+```bash
+from random import random
+import random
+
+jumlah = int(input("Masukkan nilai N :"))
+for i in range(jumlah):
+ a = random.uniform(0.0, 0.5)
+ print(f"Data ke-{i+1}", a)
+print("Selesai")
+```      
+
+Pada program ini, saya menggunakan for loop yang looping nya bisa dibatasi sebanyak **n** kali. Kita bisa bebas menentukan berapa kali variable **i** akan loop. Saat menampilkan output karena nilai **i** dimulai dari angka 0, maka saya menambahkan **{i+1}** supaya **i** mulai menghitung looping dari angka 1. Ada juga function **random.uniform()** untuk menampilkan bilangan acak mulai dari 0.0 sampai 0.5. Contohnya seperti ini:      
+
+![Gambar 7](screenshot/img7.PNG)       
