@@ -19,7 +19,7 @@ Dalam latihan membuat conditional dan loop [python](https://www.python.org/) ini
    * [Tugas 1: Menampilkan n bilangan acak yang lebih kecil dari 0.5](https://github.com/Ridwanwildan/Conditional-Loop-Python#tugas-1-menampilkan-n-bilangan-acak-yang-lebih-kecil-dari-05)       
    * [Tugas 2: Menampilkan bilangan terbesar dari n data yang diinput](https://github.com/Ridwanwildan/Conditional-Loop-Python#tugas-2-menampilkan-bilangan-terbesar-dari-n-data-yang-diinput)    
    * [Tugas 3: Menghitung laba](https://github.com/Ridwanwildan/Conditional-Loop-Python#tugas-3-menghitung-laba)      
-   * [Tugas 3: Program nested](https://code.visualstudio.com/)        
+   * [Tugas 4: Program nested](https://github.com/Ridwanwildan/Conditional-Loop-Python#tugas-4-program-nested)        
   
 ## Membuat program menentukan nilai akhir    
 
@@ -219,7 +219,24 @@ total = (((modal*0)*2) + ((modal*0.1)*2) + ((modal*0.5)*3) + ((modal*0.2)*1))
 print("Total laba adalah :", total)
 ```         
 
+Pada program ini, menggunakan perulangan for dan juga conditional if untuk menentukan outputnya. Untuk menghitung persentase nya menggunakan angka desimal seperti **0.1** untuk **1%**. Kemudian semua laba nya dihitung dan dimasukkan kedalam variable. Contohnya seperti ini :         
+
 ![Gambar 9](screenshot/img9.PNG)       
 
-## Tugas 4: nested           
+## Tugas 4: program nested               
+
+```bash
+x = 10
+y = 10
+
+for i in range(x):
+ for j in range(y):
+     tambah = i+j
+     print("{0:>3}".format(tambah), end="")
+ print()
+```       
+
+Output ini akan menghasilkan angka berurutan secara vertikal dan horizontal menggunakan perulangan for yang didalamnya ada perulangan for lagi (nested). Kemudian diberi **format()** supaya angka yang vertikal dan horizontal dapat bertambah dan berurutan. Hasilnya seperti ini :           
+
+![Gambar 10](screenshot/img10.PNG)       
 
