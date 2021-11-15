@@ -223,7 +223,7 @@ Pada program ini, menggunakan perulangan for dan juga conditional if untuk menen
 
 ![Gambar 9](screenshot/img9.PNG)       
 
-## Tugas 4: program nested               
+## Tugas 4: Program nested               
 
 ```bash
 x = 10
@@ -240,3 +240,4 @@ Output ini akan menghasilkan angka berurutan secara vertikal dan horizontal meng
 
 ![Gambar 10](screenshot/img10.PNG)       
 
+Sekian
