@@ -10,15 +10,15 @@ Dalam latihan membuat conditional dan loop [python](https://www.python.org/) ini
 1. **Conditional**     
    * [Membuat program menentukan nilai akhir](https://github.com/Ridwanwildan/Conditional-Loop-Python#membuat-program-menentukan-nilai-akhir)         
    * [Membuat program menampilkan status gaji karyawan](https://github.com/Ridwanwildan/Conditional-Loop-Python#membuat-program-menampilkan-status-gaji-karyawan)    
-   * [Penggunaan kondisi OR](https://code.visualstudio.com/)      
-   * [Tugas praktikum 2](https://code.visualstudio.com/)      
-   * [Tugas 1: Menentukan dua bilangan terbesar](https://code.visualstudio.com/)      
-   * [Tugas 2: Mengurutkan data dari data terkecil](https://code.visualstudio.com/)       
+   * [Penggunaan kondisi OR](https://github.com/Ridwanwildan/Conditional-Loop-Python#penggunaan-kondisi-or)      
+   * [Tugas praktikum 2](https://github.com/Ridwanwildan/Conditional-Loop-Python#tugas-praktikum-2)      
+   * [Tugas 1: Menentukan dua bilangan terbesar](https://github.com/Ridwanwildan/Conditional-Loop-Python#tugas-1-menentukan-dua-bilangan-terbesar)      
+   * [Tugas 2: Mengurutkan data dari data terkecil](https://github.com/Ridwanwildan/Conditional-Loop-Python#tugas-2-mengurutkan-tiga-data-dari-data-terkecil)       
 
 2. **Loop**
-   * [Tugas 1: Menampilkan n bilangan acak yang lebih kecil dari 0.5](https://code.visualstudio.com/)       
-   * [Tugas 2: Menampilkan bilangan terbesar dari n data yang diinput](https://code.visualstudio.com/)    
-   * [Tugas 3: Menghitung laba](https://code.visualstudio.com/)      
+   * [Tugas 1: Menampilkan n bilangan acak yang lebih kecil dari 0.5](https://github.com/Ridwanwildan/Conditional-Loop-Python#tugas-1-menampilkan-n-bilangan-acak-yang-lebih-kecil-dari-05)       
+   * [Tugas 2: Menampilkan bilangan terbesar dari n data yang diinput](https://github.com/Ridwanwildan/Conditional-Loop-Python#tugas-2-menampilkan-bilangan-terbesar-dari-n-data-yang-diinput)    
+   * [Tugas 3: Menghitung laba](https://github.com/Ridwanwildan/Conditional-Loop-Python#tugas-3-menghitung-laba)      
    * [Tugas 3: Program nested](https://code.visualstudio.com/)        
   
 ## Membuat program menentukan nilai akhir    
@@ -201,7 +201,7 @@ Pada program ini, kita bebas mengisi nilai yang kita isi dan bebas mau sampai be
 
 ## Tugas 3: Menghitung laba         
 
-Seorang pengusaha menginvestasikan uangnya untuk memulai usahanya dengan modal awal 100 juta, pada bulan pertama dan kedua belum mendapatkan laba. pada bulan ketiga baru mulai mendapatkan laba sebesar 1% dan pada bulan ke 5, pendapatan meningkat 5%, selanjutnya pada bulan ke 8 mengalami penurunan keuntungan sebesar 2%, sehingga laba menjadi 3%. Hitung total keuntungan selama 8 bulan berjalan usahanya.           
+> Seorang pengusaha menginvestasikan uangnya untuk memulai usahanya dengan modal awal 100 juta, pada bulan pertama dan kedua belum mendapatkan laba. pada bulan ketiga baru mulai mendapatkan laba sebesar 1% dan pada bulan ke 5, pendapatan meningkat 5%, selanjutnya pada bulan ke 8 mengalami penurunan keuntungan sebesar 2%, sehingga laba menjadi 3%. Hitung total keuntungan selama 8 bulan berjalan usahanya.           
 
 ```bash
 modal = 100000000
@@ -215,6 +215,11 @@ for i in range(9):
      print(f"Laba bulan ke-{i} sebesar :",modal*0.5)
  elif (i==8):
      print(f"Laba bulan ke-{i} sebesar :",modal*0.2)
-total = (((modal*0)*2)+((modal*0.1)*2)+((modal*0.5)*3)+((modal*0.2)*1))
+total = (((modal*0)*2) + ((modal*0.1)*2) + ((modal*0.5)*3) + ((modal*0.2)*1))
 print("Total laba adalah :", total)
 ```         
+
+![Gambar 9](screenshot/img9.PNG)       
+
+## Tugas 4: nested           
+
